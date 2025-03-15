@@ -122,7 +122,7 @@ section {
 .btn-download {
     display: inline-block;
     background-color: var(--color-primary);
-    color: white;
+    color: #fff;  /* Forzamos el blanco */
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
@@ -133,5 +133,5 @@ section {
 
 .btn-download:hover {
     background-color: var(--color-accent);
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
