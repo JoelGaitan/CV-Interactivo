@@ -1,7 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
+    
     const toggleThemeButton = document.getElementById("toggle-theme");
     const body = document.body;
     const progressBars = document.querySelectorAll(".progress");
+
+progressBars.forEach(bar => {
+    let width = bar.style.width;
+    bar.style.width = "0%";
+    setTimeout(() => {
+        bar.style.transition = "width 2s ease-in-out";
+        bar.style.width = width;
+    }, 500);
+});
+
 
     // Tema guardado
     if (localStorage.getItem("dark-mode") === "true") {
