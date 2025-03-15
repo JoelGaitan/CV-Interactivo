@@ -56,7 +56,6 @@ header p {
     color: white;
 }
 
-
 button {
     background-color: var(--color-primary);
     color: white;
@@ -96,6 +95,7 @@ section {
     background: var(--color-primary);
     transition: width 1s ease-in-out;
 }
+
 .perfil-img {
     width: 150px;
     height: 150px;
@@ -105,6 +105,7 @@ section {
     margin: 0 auto 10px auto;
     border: 3px solid var(--color-primary);
 }
+
 /* Enlaces con estilo */
 #contacto a {
     text-decoration: none;
@@ -117,6 +118,7 @@ section {
     color: var(--color-accent);
     transform: scale(1.5);
 }
+
 .btn-download {
     display: inline-block;
     background-color: var(--color-primary);
@@ -126,10 +128,10 @@ section {
     text-decoration: none;
     font-weight: bold;
     transition: background 0.3s ease-in-out, transform 0.2s;
+    margin-top: 10px;
 }
 
 .btn-download:hover {
     background-color: var(--color-accent);
     transform: scale(1.1);
 }
-
