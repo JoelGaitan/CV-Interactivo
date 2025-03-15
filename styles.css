@@ -1,0 +1,67 @@
+/* styles.css */
+
+:root {
+    --color-bg-light: #ffffff;
+    --color-bg-dark: #1e1e1e;
+    --color-text-light: #000000;
+    --color-text-dark: #ffffff;
+    --color-primary: #007bff;
+    --color-accent: #ff4500;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-bg-light);
+    color: var(--color-text-light);
+    transition: all 0.3s;
+    padding: 20px;
+}
+
+.dark-mode {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+}
+
+header {
+    text-align: center;
+}
+
+button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--color-accent);
+}
+
+section {
+    margin-top: 20px;
+    padding: 10px;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    height: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: var(--color-primary);
+    transition: width 1s ease-in-out;
+}
